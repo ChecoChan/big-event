@@ -1,0 +1,28 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: big-event
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://big-event-mysql:3306/big_event?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 20210928
+  redis:
+    host: big-event-redis
+    port: 6379
+    # password: 123456
+    database: 0
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: 1ms
+        max-idle: 4
+        min-idle: 0
+  cache:
+    redis:
+      time-to-live: 1800000 # 1800000ms = 1800s = 30min
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
