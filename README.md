@@ -1,6 +1,6 @@
 # big-event
 
-本项目是一个文章管理系统的后端项目，前端在这👉[big-event 前端](https://github.com/ChecoChan/big-event-frontend)，支持 Docker 一键启动。
+本项目是一个文章管理系统的后端项目，前端在这👉[big-event 前端](./big-event-frontend)，支持 Docker 一键启动。
 
 项目框架：SpringBoot + MySQL + MyBatis-Plus + Redis + Spring Cache
 
